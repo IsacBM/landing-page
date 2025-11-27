@@ -68,7 +68,7 @@
 
     function createCloud() {
       const cloud = document.createElement('img');
-      cloud.src = '/imgs/nuvem.png';
+      cloud.src = '/imgs/teste-upscale - remove.png';
       cloud.classList.add('cloud');
 
       // posição vertical aleatória
@@ -77,10 +77,6 @@
       // velocidade horizontal (30–60s)
       const speed = Math.random() * 30 + 30;
       cloud.style.setProperty('--speed', speed + 's');
-
-      // velocidade da “respiração” (5–9s)
-      const floatSpeed = Math.random() * 4 + 5;
-      cloud.style.setProperty('--floatSpeed', floatSpeed + 's');
 
       // maioria bem branca, algumas mais suaves
       const isFaint = Math.random() < 0.25; // 25% nuvens suaves
@@ -102,7 +98,7 @@
       cloud.style.setProperty('--endOpacity', endOpacity.toFixed(2));
 
       // escala (tamanho relativo)
-      const startScale = Math.random() * 0.4 + 0.8; // 0.8–1.2
+      const startScale = Math.random() * 0.8 + 0.8; // 0.8–1.2
       let endScale     = startScale + (Math.random() * 0.3 - 0.15);
       endScale = clamp(endScale, 0.7, 1.4);
 
