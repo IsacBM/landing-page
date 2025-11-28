@@ -19,7 +19,7 @@
   <div class="container">
     <div class="card">
       <div class="mascot">
-        <img src="/imgs/coruja-mascote.png" alt="Mascote Overflows">
+        <img src="/imgs/Coruja-Manutenção.png" alt="Mascote Overflows">
       </div>
 
       <h1>Overflows - Em... <span class="roxin">Ops!</span></h1>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="social-buttons">
-        <a class="social-btn social-btn--instagram" href="https://instagram.com/seu_perfil" target="_blank" rel="noreferrer">
+        <a class="social-btn social-btn--instagram" href="https://instagram.com/" target="_blank" rel="noreferrer">
           <span class="icon" style="color: #ae066b;"><i class="bi bi-instagram"></i></span>
           Instagram
         </a>
@@ -51,7 +51,7 @@
       </div>
     </div>
       <footer class="footer">
-  Overflows &copy; <span id="year"></span> - Todos os direitos reservados.
+  Overflows &copy; <span class="roxin"></span><span id="year"></span> - Todos os direitos reservados.
 </footer>
   </div>
 
@@ -73,12 +73,12 @@
       // posição vertical aleatória
       cloud.style.top = Math.random() * 90 + 'vh';
 
-      // velocidade horizontal (30–60s)
+      // velocidade horizontal
       const speed = Math.random() * 30 + 30;
       cloud.style.setProperty('--speed', speed + 's');
 
       // maioria bem branca, algumas mais suaves
-      const isFaint = Math.random() < 0.25; // 25% nuvens suaves
+      const isFaint = Math.random() < 0.25; 
 
       let startOpacity, endOpacity;
 
